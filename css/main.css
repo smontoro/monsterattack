@@ -13,13 +13,13 @@ section#health {
 div#left {
 	float:  left;
 	height: auto;
-	width: 50%;
+	width: 40%;
 	display: inline-block;
 }
 
 div#right {
 	height: auto;
-	width: 50%;
+	width: 40%;
 	display: inline-block;
 }
 
