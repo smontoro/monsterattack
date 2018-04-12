@@ -14,11 +14,13 @@ div#left {
 	float:  left;
 	height: auto;
 	width: 50%;
+	display: inline-block;
 }
 
 div#right {
 	height: auto;
 	width: 50%;
+	display: inline-block;
 }
 
 section#buttons {
