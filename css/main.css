@@ -1,5 +1,59 @@
-img {
-	max-width: 200px;
-	max-height: 200px;
-	border-radius: 50%;
+.body {
+	text-align: center;
+	margin: 0 auto;
 }
+
+section#health {
+	height: 200px;
+	width: 100%;
+	background-color: lightgrey;
+	padding: 10px;
+}
+
+div#left {
+	float:  left;
+	height: auto;
+	width: 50%;
+}
+
+div#right {
+	height: auto;
+	width: 50%;
+}
+
+section#buttons {
+	height: 200px;
+	width: 100%;
+	background-color: lightyellow;
+	padding: 10px;
+}
+
+.btn {
+	height: 70px;
+	width: 120px;
+	font-size: 16px;
+	margin: 0 10px;
+}
+
+.start {
+	background-color: tomato;
+	margin: 20px 0;
+	border: 2px solid black;
+}
+
+.attack {
+	background-color: orange;
+}
+
+.special {
+	background-color: blue;
+}
+
+.heal {
+	background-color: green;
+}
+
+.give-up {
+	background-color: purple;
+}
+
