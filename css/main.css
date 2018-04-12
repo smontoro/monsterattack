@@ -23,6 +23,10 @@ div#right {
 	display: inline-block;
 }
 
+.healthBar {
+	background-color: green;
+}
+
 section#buttons {
 	height: 200px;
 	width: 100%;
