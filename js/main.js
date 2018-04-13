@@ -7,16 +7,16 @@ new Vue({
 	},
 	methods: {
 		start: function() {
-			this.isRunning = true
-		},
-		giveUp: function() {
-			this.isRunning = false
+			this.isRunning = !this.isRunning
 			this.playerHealth = 100
 			this.monsterHealth = 100
 		},
+		calcDamage: function(max, min) {
+			return Math.floor(Math.random() * max) + min
+		},
 		attack: function() {
-			this.playerHealth -= Math.floor(Math.random() * 18) + 6
-			this.monsterHealth -= Math.floor(Math.random() * 10) + 3
+			this.playerHealth -= calcDamage(18, 6)
+			this.monsterHealth -= calcDamage(10, 3)
 		},
 		special: function() {
 			this.playerHealth -= Math.floor(Math.random()*18) + 6
@@ -29,4 +29,3 @@ new Vue({
 	}
 	
 })
-

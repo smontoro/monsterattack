@@ -22,7 +22,7 @@
 				</div>
 				<div id="right">
 					<h2>Monster Health</h2>
-					<div class="healthBar">
+					<div class="healthBar" v-bind:style="{width:playerHealth + '%'}">
 						<h4>{{ monsterHealth }}</h4>
 					</div>
 				</div>
@@ -36,7 +36,7 @@
 				<button type="button" class="attack btn" v-on:click="attack">Attack</button>
 				<button type="button" class="special btn" v-on:click="special">Special Attack</button>
 				<button type="button" class="heal btn" v-on:click="heal">Heal</button>
-				<button type="button" class="give-up btn" v-on:click="giveUp">Give Up</button>
+				<button type="button" class="give-up btn" v-on:click="start">Give Up</button>
 			</div>
 		</section>
 		
