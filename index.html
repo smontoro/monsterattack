@@ -16,7 +16,7 @@
 		<section id="health">
 				<div id="left">
 					<h2>Player Health</h2>
-					<div class="healthBar">
+					<div class="healthBar" v-bind:style="{width:playerHealth + '%'}">
 						<h4>{{ playerHealth }}</h4>
 					</div>
 				</div>
@@ -29,14 +29,14 @@
 		</section>
 
 		<section id="buttons">
-			<div>
-				<button type="button" class="start btn">Start Game</button>
+			<div v-if="!isRunning">
+				<button type="button" class="start btn" v-on:click="start">Start Game</button>
 			</div>
-			<div> 
-				<button type="button" class="attack btn">Attack</button>
-				<button type="button" class="special btn">Special Attack</button>
-				<button type="button" class="heal btn">Heal</button>
-				<button type="button" class="give-up btn">Give Up</button>
+			<div v-else> 
+				<button type="button" class="attack btn" v-on:click="attack">Attack</button>
+				<button type="button" class="special btn" v-on:click="special">Special Attack</button>
+				<button type="button" class="heal btn" v-on:click="heal">Heal</button>
+				<button type="button" class="give-up btn" v-on:click="giveUp">Give Up</button>
 			</div>
 		</section>
 		
