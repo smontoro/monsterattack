@@ -1,65 +1,22 @@
-.body {
+h1 {
 	text-align: center;
-	margin: 0 auto;
 }
 
-section#health {
-	height: 200px;
-	width: 100%;
-	background-color: lightgrey;
-	padding: 10px;
+ul {
+	text-align: center;
+	list-style-type: none;
+	padding: 0;
 }
 
-div#left {
-	float:  left;
-	height: auto;
-	width: 40%;
+ul li {
 	display: inline-block;
+	margin: 10px;
 }
 
-div#right {
-	height: auto;
-	width: 40%;
-	display: inline-block;
+#app {
+	text-align: center;
 }
 
-.healthBar {
-	background-color: green;
+img {
+	max-height: 500px;
 }
-
-section#buttons {
-	height: 200px;
-	width: 100%;
-	background-color: lightyellow;
-	padding: 10px;
-}
-
-.btn {
-	height: 70px;
-	width: 120px;
-	font-size: 16px;
-	margin: 0 10px;
-}
-
-.start {
-	background-color: tomato;
-	margin: 20px 0;
-	border: 2px solid black;
-}
-
-.attack {
-	background-color: orange;
-}
-
-.special {
-	background-color: blue;
-}
-
-.heal {
-	background-color: green;
-}
-
-.give-up {
-	background-color: purple;
-}
-

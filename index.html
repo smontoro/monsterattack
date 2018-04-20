@@ -11,20 +11,25 @@
 
 
 	<div id="app">
-		<h1>Choose a link below</h1>
+		<h1>Choose an image below</h1>
 		<ul>
 			<li>
-				<router-link to="/one">Link One</router-link>
+				<router-link to="/one">One</router-link>
 			</li>
 			<li>
-				<router-link to="/two">Link Two</router-link>
+				<router-link to="/two">Two</router-link>
 			</li>
 			<li>
-				<router-link to="/three">Link Three</router-link>
+				<router-link to="/three">Three</router-link>
 			</li>
 		</ul>
+		<div id="content">
+			<router-view></router-view>
+		</div>
 	</div>
 
+
+<!--scripts-->
 
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>

@@ -1,33 +1,44 @@
-const one = {
-	template: '<h1>One</h1>'
+const one= {
+	template: `<div>
+	<img src="img/base.jpg">
+	</div>`
 }
 const two = {
-	template: '<h1>Two</h1>'
+	template: `<div>
+	<img src="img/poseidon.jpg">
+	</div>`
 }
 const three = {
-	template: '<h1>Three</h1>'
+	template: `<div>
+	<img src="img/space.jpg">
+	</div>`
 }
 
 const router = new VueRouter({
 	routes: [
-	{
-		path:'/one',
-		component: one
-	},
 		{
-		path:'/two',
-		component: two
-	},
+			path: '/one',
+			component: one
+		},
 		{
-		path:'/three',
-		component: three
-	}
+			path: '/two',
+			component: two
+		}, 
+		{
+			path: '/three',
+			component: three
+		}
 	]
 })
 
-var routeTest = new Vue ({
+
+var routeTest = new Vue({
+	router, 
 	el: '#app',
 	data: {
 
 	},
-}).$mount('app')
+	methods: {
+
+	}
+}).$mount('#app')
