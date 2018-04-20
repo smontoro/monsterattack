@@ -1,5 +1,11 @@
+* {
+	margin: 0;
+}
+
 h1 {
 	text-align: center;
+	color: white;
+	font-family: 'Arial'
 }
 
 ul {
@@ -18,5 +24,22 @@ ul li {
 }
 
 img {
-	max-height: 500px;
+	max-height: 400px;
+	padding-top: 50px;
+}
+
+.nav-background {
+	background-color: darkgrey;
+	padding: 20px;
+}
+
+footer {
+	background-color: darkgrey;
+	color: white;
+	height: 100px;
+	margin-top: 50px;
+}
+
+footer h4 {
+	padding-top:35px;
 }
