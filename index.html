@@ -2,51 +2,32 @@
 <html>
 
 <head> 
-	<title>Monster Attack</title>
+	<title>Vue Router</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <body class="body">
 
-	<div id="main">
-		<header>
-			<h1>MONSTER ATTACK!</h1>
-		</header>
 
-		<section id="health">
-				<div id="left">
-					<h2>Player Health</h2>
-					<div class="healthBar" v-bind:style="{width:playerHealth + '%'}">
-						<h4>{{ playerHealth }}</h4>
-					</div>
-				</div>
-				<div id="right">
-					<h2>Monster Health</h2>
-					<div class="healthBar" v-bind:style="{width:playerHealth + '%'}">
-						<h4>{{ monsterHealth }}</h4>
-					</div>
-				</div>
-		</section>
 
-		<section id="buttons">
-			<div v-if="!isRunning">
-				<button type="button" class="start btn" v-on:click="start">Start Game</button>
-			</div>
-			<div v-else> 
-				<button type="button" class="attack btn" v-on:click="attack">Attack</button>
-				<button type="button" class="special btn" v-on:click="special">Special Attack</button>
-				<button type="button" class="heal btn" v-on:click="heal">Heal</button>
-				<button type="button" class="give-up btn" v-on:click="start">Give Up</button>
-			</div>
-		</section>
-		
+	<div id="app">
+		<h1>Choose a link below</h1>
+		<ul>
+			<li>
+				<router-link to="/one">Link One</router-link>
+			</li>
+			<li>
+				<router-link to="/two">Link Two</router-link>
+			</li>
+			<li>
+				<router-link to="/three">Link Three</router-link>
+			</li>
+		</ul>
 	</div>
 
-<div >
-
-</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 
