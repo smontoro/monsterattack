@@ -43,3 +43,16 @@ footer {
 footer h4 {
 	padding-top:35px;
 }
+
+#slide-fade-enter, .slide-fade-leave-to {
+	transform: translateX(40px);
+	opacity: 0;
+ }
+
+.slide-fade-enter-active,  {
+	transition: 0.3s ease;
+}
+
+.slide-fade-leave-active {
+	transition: 0.3s ease;
+}

@@ -27,10 +27,12 @@
 		</div>
 
 		<div id="content">
-			<router-view></router-view>
+			<transition mode="out-in" name="slide-fade">
+				<router-view></router-view>
+			</transition>
 		</div>
 
-		<footer id="app">
+		<footer>
 			<h4>Thanks for visiting my page!</h4>
 		</footer>
 	</div>
